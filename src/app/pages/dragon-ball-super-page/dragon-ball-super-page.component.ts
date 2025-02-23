@@ -7,11 +7,11 @@ interface ICharacter {
 }
 
 @Component({
-  selector: 'app-dragon-ball-page',
+  selector: 'app-dragon-ball-super-page',
   imports: [],
-  templateUrl: './dragon-ball-page.component.html',
+  templateUrl: './dragon-ball-super-page.component.html',
 })
-export class DragonBallPageComponent {
+export class DragonBallSuperPageComponent {
   name = signal<string>('');
   power = signal<number>(0);
   characters = signal<ICharacter[]>([
@@ -19,6 +19,11 @@ export class DragonBallPageComponent {
       id: 1,
       name: 'Goku',
       power: 9001,
+    },
+    {
+      id: 2,
+      name: 'Vegeta',
+      power: 8000,
     },
   ]);
 
