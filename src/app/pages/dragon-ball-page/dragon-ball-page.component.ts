@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 
 interface ICharacter {
   id: number;
@@ -19,14 +19,25 @@ export class DragonBallPageComponent {
       power: 9001,
     },
     {
-      id: 1,
+      id: 2,
       name: 'Vegeta',
       power: 8000,
     },
     {
-      id: 1,
+      id: 3,
       name: 'Piccoplo',
       power: 3000,
     },
+    {
+      id: 4,
+      name: 'Yamcha',
+      power: 500,
+    },
   ]);
+
+  powerClasses = computed(() => {
+    return {
+      'text-danger': true,
+    };
+  });
 }
