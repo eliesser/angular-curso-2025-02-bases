@@ -9,8 +9,6 @@ import { CharacterAddComponent } from '../../components/dragon-ball/character-ad
   templateUrl: './dragon-ball-super-page.component.html',
 })
 export class DragonBallSuperPageComponent {
-  name = signal<string>('');
-  power = signal<number>(0);
   characters = signal<ICharacter[]>([
     {
       id: 1,
