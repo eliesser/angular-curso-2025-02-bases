@@ -23,4 +23,8 @@ export class DragonBallSuperPageComponent {
       power: 8000,
     },
   ]);
+
+  addCharacter(newCharacter: ICharacter) {
+    this.characters.update((prev) => [...prev, newCharacter]);
+  }
 }
